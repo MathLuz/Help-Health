@@ -1,0 +1,3250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Nunito:wght@200;500&display=swap');
+html{
+    font-family:  'Aleo', serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+  /* configuração para smartphone */
+@media(min-width: 50px) and (max-width:450px){
+
+    
+     /*------ inicio header -------*/
+     header{
+        background-color: #25A18E;
+        color: #000;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+        font-size: 25px;
+        box-shadow: 0px 5px 40px -22px #000000;
+        -webkit-box-shadow: 0px 5px 40px -22px #000000;
+        -moz-box-shadow: 0px 5px 40px -22px #000000;
+    }
+    header .areaHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    header .areaHeader h1{
+        font-size: 35px;
+        margin-top: 8px;
+    }
+    header .areaHeader h1 #logo{
+        color:#fff;
+    }
+    header .areaHeader .menuHamburguer{
+        height: 25px;
+        position: absolute;
+        right: 0;
+        margin: 15px 20px 0 0;
+        filter: invert(1);
+        cursor: pointer;
+    }
+    header .menuDesativado{
+        display: none;
+        background-color: #105a4f;
+    }
+    header .menuAtivado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding-top: 30px; */
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(150deg, #004E64 60%, #25A18E);
+        margin-top: 9px;
+        z-index: -5;
+        position: absolute;
+        -webkit-animation: slide-in-top 0.5s;
+                animation: slide-in-top 0.5s;
+    }
+    header .menuAtivado .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header div .box .link{
+        font-size: 30px;
+        color: #fff;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    header div .forms{
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        /* width: 335px; */
+        text-align: center;
+    }
+    header div .box .linkDuvidas{
+	    border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+        /*----- fim header  ------*/
+
+          /* ---inicio main--- */
+    
+          main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 1100px;
+            gap:60px;
+            margin-top: 12%;
+            /* margin-bottom: 12%; */
+        }
+        main #corpo{
+            display: flex;
+            justify-content: center ;
+            flex-direction: column;
+            align-content: center;
+            gap:40px;
+            width: 100%;
+
+        }
+        main #corpo .part1main{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background:linear-gradient(45deg, #004E64, #00a5cf);
+            height: 500px;
+            width: 100%;
+        }
+        main #corpo .textimage1{
+            text-align: center;
+            font-size: 35px;
+            max-width: 500px;
+            color: #25A18E;
+        }
+        main #corpo .textimage1 .helphealth2{
+            font-size: 39px;
+            color: #fff;
+        
+        }
+        main #corpo .textimage1 .helphealth1{
+            color:#00a5cf;
+        
+        }
+        main #image2{
+        display: none;
+        }
+        
+        
+        /* aumento de area clicavel  */
+        main .conheçaHH a:link, main .conheçaHH a {
+            background-color: #00a5cf;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+            -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+            -moz-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52); 
+            border-radius: 10px;
+            padding-top: 30px;
+            margin-top: 25px;
+            width: 300px;
+            height: 80px;
+        }
+        main .conheçaHH a:hover, a:active {
+            background-color: #004e64;
+            color: white;
+            transition: 350ms;
+          }
+        
+          /* '---------' */
+        
+        .agrupador-coluna{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .gap{
+            gap: 20px;
+        }
+        /*-------------Fim da Primeira Parte da Home ----------------*/
+        
+        
+        
+            /*-------------Segunda Parte da Home ----------------*/
+        
+        main #perrengues .perrenguesPrincipalText{
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+            max-width: 85%;
+        }
+        main #perrengues .perrenguesPrincipalText .helphealth{
+            color:#25A18E;
+            height: 39px;
+            border-radius: 6px;
+        }
+        main #perrengues{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            align-items: center;
+            width: 100%;
+        }
+        main #perrengues .lado{
+            width: 290px;
+            height: 330px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            border-radius: 14px;
+        
+            background: #eee;
+            align-items: center;
+            color: #000;
+            text-align: center;
+            gap: 30px
+        }
+        main .perrenguesText{
+           
+            font-size: 20px;
+            max-width: 330px;
+          
+        }
+        main #perrengues .problemas{
+            background:linear-gradient(225deg, #25A18E, #004E64);
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 12px;
+            font-size: 22px;
+            width: 82%;
+        }
+        
+        main #perrengues .filaimg{
+             
+            
+            min-width: 300px;
+            height:250px;
+            background: url(/public/img/fila.png);
+            border-radius: 13px;
+         
+        }
+        
+        main #perrengues .remedioimg{
+           
+            min-width: 300px;
+            height:250px;
+            background: url(/public/img/remedio.png);
+            border-radius: 13px;
+          
+        }
+        
+        main #perrengues .expimg{
+            
+            min-width: 300px;
+            height:250px;
+            background: url(/public/img/exp.png);
+            border-radius: 13px;
+           
+            
+            
+        }
+        main #perrengues .corletraproblemas{
+            display: none;
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            align-items: center;
+            
+        }
+        main #corpoBeta{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            flex-direction: column;
+            justify-content: center ;
+            align-self: center;
+            height: 350px;
+            margin-bottom: 60px;
+        }
+        main #corpoBeta .FormBeta{
+            background: linear-gradient(45deg, #004E64, #00A5CF);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            border-radius: 10px;
+            height: 100%;
+            color:#fff;
+            box-shadow: 2px -2px 6px #333, 2px 2px 6px #333;
+            font-size: 18px;
+
+        }
+        main #corpoBeta .FormBeta input[type=text], input[type=email]{
+            box-shadow: 2px 2px 4px #333;
+            border-radius: 2px 6px 6px 6px;
+            padding: 5px;
+            width: 60%;
+            height: 45%;
+        }
+        main #corpoBeta .agrupadorBeta{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        main #corpoBeta .FormBeta input[type=submit]{
+            width: 80px;
+            height: 35px;
+            border-radius: 10px;
+            background: #25A18E;
+            color: #fff;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.144), 0 6px 20px 0 rgba(0,0,0,0.19);
+            cursor: pointer;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px #333;
+        }
+        main #corpoBeta .FormBeta label{
+            color: #fff;
+            text-shadow: 2px 2px 2px #333;  
+        }
+        main #corpoBeta .FormBeta input[type=checkbox]{
+            box-shadow: 1px 2px 3px #333;
+            cursor: pointer;
+        }
+        main #corpoBeta #betaText{
+            font-size: 18px;
+            display: flex;
+            width: 85%;
+            height: 20%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #ddd;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 2px 2px 6px #333;
+        }
+        /*-------------Fim da Segunda Parte da Home ----------------*/ 
+
+/*  --------------------------------------------------------- LOGIN e CADASTRO-----------------------------------------------------------*/
+.fundologin{
+    display: flex;
+    justify-content: center;
+    background: url(/public/img/back-cadastro3.png);
+    width: 3000px;
+
+    
+}
+.mainlogin{
+    display: flex;
+    justify-content: center;
+    
+    /* background:linear-gradient(45deg, #004E64, #00a5cf);
+    width: 1000px; */
+}
+.formlogin{
+    display: flex;
+    background-color: #25A18E;
+    height: 440px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+.formlogin a{
+ color: #fff;
+ font-size: 20px;
+}
+.formlogin .palavralogin{
+    margin-bottom: 50px;
+    color: #fff;
+}
+.formlogin .botaologar{
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formlogin .botaologar:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formlogin .linkslogin{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 35px; 
+}
+.formlogin .primeiroacesso{
+    font-size: 20px;
+}
+body .formlogin input[type=password], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+     /* ------------ PARTE CADASTRO ----------------*/
+.formcadastro{
+    display: flex;
+    background-color: #25A18E;
+    height: 490px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 26%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+
+body .formcadastro input[type=password], input[type=email], input[type="text"]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+.formcadastro .palavralogin{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.formcadastro .botaocadastro{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formcadastro .botaocadastro:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formcadastro .checkboxtermo{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.formcadastro .primeiroacesso{
+    font-size: 20px;
+}
+.formcadastro a{
+    color: #fff;
+    font-size: 20px;
+   }
+/*  --------------------------------------------------------- FIM LOGIN e CADASTRO-----------------------------------------------------------*/
+
+        /*-------------Inicio help health mobile--------------------*/
+        
+        .poderdoF-pai{
+            margin-top: 5%;
+            margin-left: 3%;
+            /* border: red 1px solid;  */
+            max-width: 60%;
+            height: 97%;
+            border-radius: 10px;
+            /* background-color: rgb(207, 204, 204); */
+            padding: 20px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }   
+        .titulo-poderdoF{
+            font-size: 23px;
+        }
+        .poderdoF{
+            /* border: red 1px solid; */
+            margin-left: 80px;
+            margin-top: 2%;
+            text-align: center;
+            font-size: 10px;
+            color: #012c26; 
+            max-width: 425%;
+        }
+        .conteudos{
+            /* border: red 1px solid;  */
+            max-width: 87%;
+        }
+        .traco{
+            border: #105a4f  1px solid;  
+            margin-bottom: 60px;
+            max-width: 80%;
+            margin: 10%;
+        }
+        .area-conteudos{
+            /* border: red 1px solid; */
+            margin-left: 3%;
+        }
+        .caixa-remedio , .caixa-espera , .caixa-experiencia {
+            font-size: 20px;
+            background-image: url("/public/img/back-farmacia2.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position: center;
+            border-radius: 5%;
+            display: flex;
+            /* border: red 1px solid;  */
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 5px 40px 40px 18px ;
+            max-width: 350px;
+            height: 300px;
+        }
+        .caixa-espera {
+            background-image: url("/public/img/back-consulta.jpg");
+        }
+        .caixa-experiencia{
+            background-image: url("/public/img/back-experiencia.jpg");
+        }
+        .texto-caixa {
+            margin-top: 250px;
+            /* border: red 1px solid;  */
+            width: 500px;
+            height: 50px;
+            border-radius: 0 0 10px 10px;
+            background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+            color: white;
+            font-size: 22px;
+        }
+        .texto-caixa-explicacao{
+            font-size: 27px;   
+            color: black;
+            height: 100px;
+            /* border: red 1px solid;   */
+        }
+        .caixa-remedio-explicacao , .caixa-espera-explicacao , .caixa-experiencia-explicacao{
+            border-radius: 10px;
+            display: flex;
+            /* border: red 1px solid;   */
+            flex-flow: row wrap;
+            margin: 5px 10px 40px 40px ;
+            width: 320px;
+            height: 150px;
+        }
+        .titulo-video{
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: -10px;
+            width: 310px;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+            color: white;
+            position: relative;
+            border-radius: 10px;
+        }
+        .iframe-video{
+            margin:0 5px 0px 6px;
+            /* border: red 1px solid;   */
+            box-shadow: 5px 5px 15px rgb(88, 86, 86);
+            background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+            border-radius: 10px;
+            width: 370px;
+            height: 350px;
+        }  
+    
+        /*----------Fim Help health mobile ------------*/
+
+        /* ---------------------------------- */
+        /* Alternado Link Dúvidas */
+/* ---------------------------------- */
+main .boxDuvidas{
+    margin: 50px 0;
+    font-family: 'Nunito', sans-serif;
+}
+main .boxDuvidas .tituloDuvidas{
+    background: #004E64;
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 0;
+    margin: 10px 0;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+}
+main .boxDuvidas nav ul li{list-style-type: none}
+
+main .boxDuvidas nav ul li div{
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+main .boxDuvidas nav ul li .boxClick{
+    background: linear-gradient(90deg,#004E64 45%, #25A18E);
+    color: #fff;
+    cursor: pointer;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+}
+main .boxDuvidas nav ul li .boxClick:active{
+    background-color: #ddd;
+    /* transition: none; */
+}
+main .boxDuvidas nav ul .respostaDesativada .resposta{
+	/* -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;  */
+    display: none;
+}
+main .boxDuvidas nav ul .respostaAtivada .boxClick{
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+main .boxDuvidas nav ul .respostaAtivada .resposta{
+    display: block;
+    background-color: #e7e7e7;
+    margin-top: 0;
+    padding: 10px 20px 15px 20px;
+    font-size: 12px;
+    width: 260px;
+    border-radius: 0 0 10px 10px;
+	-webkit-animation: slide-in-top 0.5s;
+            animation: slide-in-top 0.5s;
+    z-index: 1;
+}
+main .boxDuvidas nav ul li div img{
+    height: 18px;
+    margin: 11px 14px 0 0;
+    position: absolute;
+    right: 0;
+    filter: invert(1);
+}
+main .boxDuvidas nav ul li div p{
+    padding: 10px 0px;
+}
+main .boxDuvidas nav ul .respostaAtivada div img{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+}
+main .boxDuvidas nav ul .respostaDesativada div img{
+    transition: 0.5s;
+}
+        /* Efeito da resposta descendo */
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* -------- fim Duvidas ------- */   
+
+
+        /* Pedroca mexendo na beta responsivo */
+        footer{
+            height: 300px;
+            width: 100%;
+        }
+        footer nav .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            background: linear-gradient(280deg, #25A18E ,  #004e64);
+            height: 300px;
+            width: 100%;
+        } 
+        footer nav .box .box-son .redesSociais{
+            display: flex;
+            gap:15px;
+            align-items: center;
+        }
+        footer nav .box .box-son .redesSociais .whats{
+            background: url(/public/img/whats.png);
+            width: 53px;
+            height:55px;
+            
+        }
+        footer nav .box .box-son .redesSociais .insta{
+            background: url(/public/img/insta.png);
+            width: 53px;
+            height:55px;
+            
+        }
+        footer nav .box .box-son .redesSociais .yt{
+        
+            background: url(/public/img/yt.png);
+            width: 56px;
+            height:68px;
+        }
+        
+        footer nav .box .box-son{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        }
+        footer nav .box .box-son ul li{
+        list-style-type: none;
+        }
+        footer nav .box .box-son ul li a{
+        text-decoration: none;
+        color: #fff ;
+        }
+        footer nav .box .box-son .lista{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        footer nav .box .box-son h2 .logo{
+            color: #fff;
+        }
+          
+    }
+        /* configuração para tablet */
+@media(min-width:451px) and (max-width:1024px){
+    
+   
+    /*------ inicio header -------*/
+    header{
+        background-color: #25A18E;
+        color: #000;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+        box-shadow: 0px 5px 40px -22px #000000;
+        -webkit-box-shadow: 0px 5px 40px -22px #000000;
+        -moz-box-shadow: 0px 5px 40px -22px #000000;
+    }
+    header img{
+        display: none;
+    }
+    header .areaHeader h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 25px;
+    }
+    header .areaHeader h1 #logo{
+        color:#fff;
+        margin-left: 20px;
+    }
+    header div .box .link{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        color: #004E64;
+    }
+    header #idMenu{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header div .box{
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+    }
+    header div .box .link{
+        margin: 20px;
+        border-radius: 20px;
+        text-align: center;
+        height: 40px;
+        width: 60px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+    header div .box .link:hover{
+        background-color: #f3f3f3;
+        transition: 0.3s;
+    }
+    header div .forms{
+        margin: 20px 3% 0 0;
+        height: 30px;
+        width: 60px;
+        border-radius: 8px;
+        background-color:#00a5cf;
+        color: #fff;
+        font-family:  'Aleo', serif;
+        font-weight: 700;
+        font-size: 15px;  
+        box-shadow: 3px 3px 20px -10px #000000;
+        -webkit-box-shadow: 3px 3px 20px -10px #000000;
+        -moz-box-shadow: 3px 3px 20px -10px #000000; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header div .forms:hover{
+        background-color: #004E64;
+        color: #fff;
+        transition: 0.3s;
+    }
+    /* ---------------------------------- */
+            /* Alterando Main */
+    /* ---------------------------------- */
+    /*------------- Primeira Parte da Home ----------------*/
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 1100px;
+        /* margin-bottom: 67px;tamanho do header */
+        padding-top: 70px;
+    }
+    main #corpo{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    
+    }
+    main #corpo .part1main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(45deg, #004E64, #00a5cf);
+        height: 450px;
+        width: 100%;
+        gap:30px ;
+       
+    }
+    main #corpo .textimage1{
+        text-align: center;
+        font-size: 35px;
+        max-width: 350px;
+
+        flex-wrap: wrap;
+        gap: 3px;
+        color: #25A18E;
+    }
+    main #corpo .textimage1 .helphealth2{
+        font-size: 32px;
+        color: #fff;
+    
+    }
+    main #corpo .textimage1 .helphealth1{
+        color:#00a5cf;
+    
+    }
+    main #corpo .part1main .agrupador-coluna{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    main #image2{
+        height:60%;
+        width: 40%  ;
+        background-color: #25A18E;
+        border:solid 5px #25A18E;  
+        border-radius: 9px;  
+        box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        background: url(/public/img/imag1.png) no-repeat;
+    }
+    main .conheçaHH{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* aumento de area clicavel  */
+    main .conheçaHH a:link, main .conheçaHH a {
+        background-color: #00a5cf;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52); 
+        border-radius: 10px;
+        width: 70%;
+    }
+    main .conheçaHH a:hover, a:active {
+        background-color: #004e64;
+        color: white;
+        transition: 350ms;
+      }
+    .image1{
+        display: none;
+    }
+      /* '---------' */
+    
+    .agrupador-coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .gap{
+        align-items: center;
+        gap: 20px;
+    }
+    /*-------------Fim da Primeira Parte da Home ----------------*/
+    
+    /*-------------Segunda Parte da Home ----------------*/
+    main #corpo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #perrengues .perrenguesPrincipalText{
+        text-align: center;
+        font-size: 20px;
+        width: 85%;
+    }
+    main #perrengues .perrenguesPrincipalText .helphealth{
+        color:#25A18E;
+        height: 39px;
+        border-radius: 6px;
+    
+    }
+    
+    main #perrengues{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 750px;
+        margin-top: 35px;
+
+    }
+    main #perrengues .lado{
+        width: 75%;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        border-radius: 14px;
+        background-color: #e7e7e7;
+        align-items: center;
+    }
+    main .perrenguesText{
+        padding-left: 28px;
+        font-size: 20px;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main #perrengues .problemas{
+        background:linear-gradient(225deg, #25A18E, #004E64);
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 22px;
+
+    }
+    main #perrengues .filaimg{
+        
+        width: 80%;
+        height:100%;
+        background: url(/public/img/fila.png);
+        border-radius: 13px;
+     
+    }
+
+    main #perrengues .remedioimg{
+        width: 67%;
+        height:100%;
+        background: url(/public/img/remedio.png);
+        border-radius: 13px; 
+    }
+    main #perrengues .expimg{
+        width: 55%;
+        height:100%;
+        background: url(/public/img/exp.png);
+        border-radius: 13px;
+    }
+    main #perrengues .corletraproblemas{
+        display: none;
+     
+    }
+    /*-------------Fim da Segunda Parte da Home ----------------*/
+    
+
+    
+      /* Trabalhando na Pagina de formulario dia 30/08/22 - Pedro */
+body #corpoBeta{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+body #corpoBeta .FormBeta{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #004E64, #00A5CF);
+    width: 50%;
+    height: 350px;
+    justify-content: space-evenly;  
+    border-radius: 20px;
+    box-shadow: 2px -2px 6px #333, 2px 2px 6px #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Trabalhando na Pagina de formulario dia 30/08/22 - Pedro */
+    
+  /* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
+
+body #corpoBeta .FormBeta input[type=text], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+body #corpoBeta .FormBeta input[type=submit]{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background: #25A18E;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.144), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #333;
+}
+body #corpoBeta .FormBeta label{
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;  
+}
+body #corpoBeta .FormBeta input[type=checkbox]{
+    box-shadow: 1px 2px 3px #333;
+    cursor: pointer;
+}
+body #corpoBeta .FormBeta .agrupador-coluna{
+    gap: 5px;
+}
+main #corpoBeta .agrupadorBeta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+body #corpoBeta #betaText{
+    display: flex;
+    width: 45%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 6px #333;
+}
+/* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
+    
+/*  --------------------------------------------------------- LOGIN e CADASTRO-----------------------------------------------------------*/
+.fundologin{
+    display: flex;
+    justify-content: center;
+    background: url(/public/img/back-cadastro2.png);
+    width: 3000px;
+
+    
+}
+.mainlogin{
+    display: flex;
+    justify-content: center;
+    
+    /* background:linear-gradient(45deg, #004E64, #00a5cf);
+    width: 1000px; */
+}
+.formlogin{
+    display: flex;
+    background-color: #25A18E;
+    height: 440px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 36%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+.formlogin a{
+ color: #fff;
+ font-size: 20px;
+}
+.formlogin .palavralogin{
+    margin-bottom: 50px;
+    color: #fff;
+}
+.formlogin .botaologar{
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formlogin .botaologar:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formlogin .linkslogin{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 35px; 
+}
+.formlogin .primeiroacesso{
+    font-size: 20px;
+}
+body .formlogin input[type=password], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+     /* ------------ PARTE CADASTRO ----------------*/
+.formcadastro{
+    display: flex;
+    background-color: #25A18E;
+    height: 490px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 36%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+
+body .formcadastro input[type=password], input[type=email], input[type="text"]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+.formcadastro .palavralogin{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.formcadastro .botaocadastro{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formcadastro .botaocadastro:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formcadastro .checkboxtermo{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.formcadastro .primeiroacesso{
+    font-size: 20px;
+}
+.formcadastro a{
+    color: #fff;
+    font-size: 20px;
+   }
+/*  --------------------------------------------------------- FIM LOGIN e CADASTRO-----------------------------------------------------------*/
+
+  /*Configurando o Conteúdo Help Health para tablet*/
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;     
+   }
+.poderdoF-pai{
+
+display: flex;
+align-items: center;
+/* border: red 1px solid;  */
+width: 100%;
+height: 1800px;
+border-radius: 10px;
+background-color: rgb(207, 204, 204);
+padding: 20px;
+justify-content: center;
+color: black;
+}
+.poderdoF{
+width: 100%;
+text-align: center;
+font-size: 20px;
+color: #012c26;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.caixa-remedio , .caixa-espera , .caixa-experiencia {
+display:flex;
+font-size: 20px;
+background-image: url("/public/img/back-farmacia2.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position: center;
+border-radius: 10px;
+display: flex;
+/* border: red 1px solid;  */
+flex-flow: row wrap;
+
+align-items: center;
+width: 30%;
+height: 300px;
+}
+.caixa-espera {
+background-image: url("/public/img/back-consulta.jpg");
+}
+.caixa-experiencia{
+background-image: url("/public/img/back-experiencia.jpg");
+}
+.texto-caixa {
+margin-top: 250px;
+/* border: red 1px solid;  */
+width: 100%;
+min-height: 50px;
+border-radius: 0 0 10px 10px;
+background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+color: white;
+font-size: 22px;
+}
+.texto-caixa-explicacao{
+font-size: 27px;   
+color: black;
+height: 100px;
+/* border: red 1px solid;  */
+}
+.espacamento-img-texto{
+display: flex;
+flex-direction: column;
+gap:40px;
+}
+.traco{
+/* margin: 50px 50px 0px 40px; */
+border: #105a4f  1px solid;  
+margin-bottom: 60px;
+width: 80%;
+margin: 50px 10%;
+}
+
+main .conteudos .poderdoF-pai  .poderdoF .caixas-conteudos{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+
+.caixa-remedio-explicacao , .caixa-espera-explicacao , .caixa-experiencia-explicacao{
+font-size: 20px;
+background-size:cover;
+background-repeat:no-repeat;
+background-position: center;
+border-radius: 10px;
+display: flex;
+/* border: red 1px solid;   */
+flex-flow: row wrap;
+/* justify-content: space-around; */
+justify-content: space-evenly;
+width: 100%;
+height: 100px;
+}
+.titulo-video{
+width: 90%;
+text-align: center;
+font-size: 33px;
+background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+color: white;
+border-radius: 10px;
+}
+.iframe-video{
+display: flex;
+
+width: 100%;
+
+/* border: red 1px solid;   */
+box-shadow: 5px 5px 15px rgb(88, 86, 86);
+background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+border-radius: 10px;
+
+}  
+
+/* ----Fim do Conteudo Help Health----- */
+
+    
+    /* inicio politica privacidade*/
+    #politicaeprivacidade{
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        text-align: center;
+        align-items: center;
+        margin-top: 120px;
+        padding-top: 35px;
+        max-width: 1300px;
+        border-radius: 13px;
+        justify-content: center;
+    }
+    #politicaeprivacidade h3 {
+       padding:20px;
+    }
+   #politicaeprivacidade h4{
+       padding:20px
+   }
+   li{
+       text-decoration: none;
+   }
+    
+    /*fim politica e privacidade */
+
+
+    /*----inicio Termosdeuso-----*/
+    .termosdeuso{
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .termosdeuso h2{
+        padding-bottom: 15px;
+    }
+    .termosdeuso h3{
+        padding: 15px;
+    }
+
+
+ /* ---------------------------------- */
+        /* Alternado Link Dúvidas */
+/* ---------------------------------- */
+main .boxDuvidas{
+    /* margin: 50px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: 300px;
+}
+main .boxDuvidas .tituloDuvidas{
+    background: #004E64;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 30%;
+    border-radius: 10px;
+    font-size: 20px;
+    /* padding: 15px 0; */
+    /* margin: 10px 0; */
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+}
+main .boxDuvidas nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main .boxDuvidas nav ul{
+    width: 100%;
+
+}
+main .boxDuvidas nav ul li{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .boxDuvidas nav ul li div{
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+main .boxDuvidas nav ul li .boxClick{
+    background: linear-gradient(90deg,#004E64 45%, #25A18E);
+    color: #fff;
+    cursor: pointer;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    width: 60%;
+}
+main .boxDuvidas nav ul li .boxClick:active{
+    background-color: #ddd;
+    /* transition: none; */
+}
+main .boxDuvidas nav ul .respostaDesativada .resposta{
+	/* -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;  */
+    display: none;
+}
+main .boxDuvidas nav ul .respostaAtivada .boxClick{
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+main .boxDuvidas nav ul .respostaAtivada .resposta{
+    display: block;
+    background-color: #e7e7e7;
+    margin-top: 0;
+    /* padding: 10px 20px 15px 20px; */
+    font-size: 12px;
+    width: 60%;
+    border-radius: 0 0 10px 10px;
+	-webkit-animation: slide-in-top 0.5s;
+            animation: slide-in-top 0.5s;
+    z-index: 1;
+}
+main .boxDuvidas nav ul li div img{
+    height: 18px;
+    margin: 11px 14px 0 0;
+    position: absolute;
+    right: 0;
+    filter: invert(1);
+}
+main .boxDuvidas nav ul li div p{
+    padding: 10px 0px;
+}
+main .boxDuvidas nav ul .respostaAtivada div img{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+}
+main .boxDuvidas nav ul .respostaDesativada div img{
+    transition: 0.5s;
+}
+        /* Efeito da resposta descendo */
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* -------- fim Duvidas ------- */   
+    
+  /* ---------------------------------- */
+        /* Alternado Footer */
+/* ---------------------------------- */
+
+
+
+footer nav .box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(280deg, #25A18E ,  #004e64);
+    min-height: 150px;
+}
+footer nav .box .box-son{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav .box .box-son ul li{
+
+    list-style-type: none;
+  }
+footer nav .box .box-son ul li a{
+    text-decoration: none;
+    color: #fff ;
+  }
+footer nav .box .box-son ul li a:hover{
+    text-shadow: 0 0 5px;
+  }
+footer nav .box .box-son .lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer nav .box .box-son h2 .logo{
+    color: #fff;
+}
+footer nav .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 30px;
+    background:#004e64;
+} 
+footer nav .box .box-son .redesSociais{
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+footer nav .box .box-son .redesSociais .whats{
+    background: url(/public/img/whats.png);
+    width: 53px;
+    height:55px;
+    
+}
+footer nav .box .box-son .redesSociais .insta{
+    background: url(/public/img/insta.png);
+    width: 53px;
+    height:55px;
+    
+}
+footer nav .box .box-son .redesSociais .yt{
+
+    background: url(/public/img/yt.png);
+    width: 56px;
+    height:68px;
+    
+}
+
+    }
+
+
+    /* configuração para notebook */
+@media(min-width:1025px) and (max-width:1280px){
+   
+   header{
+        background-color: #25A18E;
+        color: #000;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+        box-shadow: 0px 5px 40px -22px #000000;
+        -webkit-box-shadow: 0px 5px 40px -22px #000000;
+        -moz-box-shadow: 0px 5px 40px -22px #000000;
+    }
+    header img{
+        display: none;
+    }
+    header .areaHeader h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .areaHeader h1 #logo{
+        color:#fff;
+        margin-left: 20px;
+    }
+    header div .box .link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        color: #004E64;
+    }
+    header #idMenu{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header div .box{
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+    }
+    header div .box .link{
+        margin: 20px;
+        border-radius: 20px;
+        text-align: center;
+        height: 40px;
+        width: 150px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+    header div .box .link:hover{
+        background-color: #f3f3f3;
+        transition: 0.3s;
+    }
+    header div .forms{
+        margin: 20px 3% 0 0;
+        height: 40px;
+        width: 100px;
+        border-radius: 8px;
+        background-color:#00a5cf;
+        color: #fff;
+        font-family:  'Aleo', serif;
+        font-weight: 700;
+        font-size: 16px;  
+        box-shadow: 3px 3px 20px -10px #000000;
+        -webkit-box-shadow: 3px 3px 20px -10px #000000;
+        -moz-box-shadow: 3px 3px 20px -10px #000000; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header div .forms:hover{
+        background-color: #004E64;
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    /* ---------------------------------- */
+            /* Alterando Main */
+    /* ---------------------------------- */
+    /*------------- Primeira Parte da Home ----------------*/
+    main{
+        display: flex;
+        justify-content: center;
+        min-height: 1100px;
+        /* margin-bottom: 67px;tamanho do header */
+        padding-top: 70px;
+    }
+    main #corpo{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    
+    }
+    main #corpo .part1main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background:linear-gradient(45deg, #004E64, #00a5cf);
+        height: 450px;
+        width: 100%;
+        gap:30px ;
+       
+    }
+    main #corpo .textimage1{
+        text-align: center;
+        font-size: 35px;
+        max-width: 350px;
+
+        flex-wrap: wrap;
+        gap: 3px;
+        color: #25A18E;
+    }
+    main #corpo .textimage1 .helphealth2{
+        font-size: 32px;
+        color: #fff;
+    
+    }
+    main #corpo .textimage1 .helphealth1{
+        color:#00a5cf;
+    
+    }
+    main #corpo .part1main .agrupador-coluna{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    main #image2{
+        height:60%;
+        width: 40%  ;
+        background-color: #25A18E;
+        border:solid 5px #25A18E;  
+        border-radius: 9px;  
+        box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        background: url(/public/img/imag1.png) no-repeat;
+    }
+    main .conheçaHH{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* aumento de area clicavel  */
+    main .conheçaHH a:link, main .conheçaHH a {
+        background-color: #00a5cf;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52); 
+        border-radius: 10px;
+        width: 70%;
+    }
+    main .conheçaHH a:hover, a:active {
+        background-color: #004e64;
+        color: white;
+        transition: 350ms;
+      }
+    .image1{
+        display: none;
+    }
+      /* '---------' */
+    
+    .agrupador-coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .gap{
+        align-items: center;
+        gap: 20px;
+    }
+    /*-------------Fim da Primeira Parte da Home ----------------*/
+    
+    /*-------------Segunda Parte da Home ----------------*/
+    main #corpo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #perrengues .perrenguesPrincipalText{
+        text-align: center;
+        font-size: 20px;
+        width: 85%;
+    }
+    main #perrengues .perrenguesPrincipalText .helphealth{
+        color:#25A18E;
+        height: 39px;
+        border-radius: 6px;
+    
+    }
+    
+    main #perrengues{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 750px;
+        margin-top: 35px;
+
+    }
+    main #perrengues .lado{
+        width: 75%;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        border-radius: 14px;
+        background-color: #e7e7e7;
+        align-items: center;
+    }
+    main .perrenguesText{
+        padding-left: 28px;
+        font-size: 20px;
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main #perrengues .problemas{
+        background:linear-gradient(225deg, #25A18E, #004E64);
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 22px;
+
+    }
+    main #perrengues .filaimg{
+        
+        width: 80%;
+        height:100%;
+        background: url(/public/img/fila.png);
+        border-radius: 13px;
+     
+    }
+
+    main #perrengues .remedioimg{
+        width: 67%;
+        height:100%;
+        background: url(/public/img/remedio.png);
+        border-radius: 13px; 
+    }
+    main #perrengues .expimg{
+        width: 55%;
+        height:100%;
+        background: url(/public/img/exp.png);
+        border-radius: 13px;
+    }
+    main #perrengues .corletraproblemas{
+        display: none;
+     
+    }
+    /*-------------Fim da Segunda Parte da Home ----------------*/
+    
+
+    
+      /* Trabalhando na Pagina de formulario dia 30/08/22 - Pedro */
+body #corpoBeta{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+body #corpoBeta .FormBeta{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #004E64, #00A5CF);
+    width: 50%;
+    height: 350px;
+    justify-content: space-evenly;  
+    border-radius: 20px;
+    box-shadow: 2px -2px 6px #333, 2px 2px 6px #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Trabalhando na Pagina de formulario dia 30/08/22 - Pedro */
+    
+  /* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
+
+body #corpoBeta .FormBeta input[type=text], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+body #corpoBeta .FormBeta input[type=submit]{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background: #25A18E;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.144), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #333;
+}
+body #corpoBeta .FormBeta label{
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;  
+}
+body #corpoBeta .FormBeta input[type=checkbox]{
+    box-shadow: 1px 2px 3px #333;
+    cursor: pointer;
+}
+body #corpoBeta .FormBeta .agrupador-coluna{
+    gap: 5px;
+}
+main #corpoBeta .agrupadorBeta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+body #corpoBeta #betaText{
+    display: flex;
+    width: 45%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 6px #333;
+}
+/* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
+    
+/* o help health notebook vai aqui */
+
+
+/*  --------------------------------------------------------- LOGIN e CADASTRO-----------------------------------------------------------*/
+.fundologin{
+    display: flex;
+    justify-content: center;
+    background: url(/public/img/back-cadastro2.png);
+    width: 3000px;
+
+    
+}
+.mainlogin{
+    display: flex;
+    justify-content: center;
+    
+    /* background:linear-gradient(45deg, #004E64, #00a5cf);
+    width: 1000px; */
+}
+.formlogin{
+    display: flex;
+    background-color: #25A18E;
+    height: 440px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 76%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+.formlogin a{
+ color: #fff;
+ font-size: 20px;
+}
+.formlogin .palavralogin{
+    margin-bottom: 50px;
+    color: #fff;
+}
+.formlogin .botaologar{
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formlogin .botaologar:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formlogin .linkslogin{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 35px; 
+}
+.formlogin .primeiroacesso{
+    font-size: 20px;
+}
+body .formlogin input[type=password], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+     /* ------------ PARTE CADASTRO ----------------*/
+.formcadastro{
+    display: flex;
+    background-color: #25A18E;
+    height: 490px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 76%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+
+body .formcadastro input[type=password], input[type=email], input[type="text"]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+.formcadastro .palavralogin{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.formcadastro .botaocadastro{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formcadastro .botaocadastro:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formcadastro .checkboxtermo{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.formcadastro .primeiroacesso{
+    font-size: 20px;
+}
+.formcadastro a{
+    color: #fff;
+    font-size: 20px;
+   }
+/*  --------------------------------------------------------- FIM LOGIN e CADASTRO-----------------------------------------------------------*/
+
+
+
+/* o help health notebook vai aqui */
+
+
+/* ---------------------------------- */
+        /* Alternado Footer */
+/* ---------------------------------- */
+footer nav .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(280deg, #25A18E ,  #004e64);
+    min-height: 150px;
+}
+footer nav .box .box-son{
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav .box .box-son ul li{
+
+    list-style-type: none;
+  }
+footer nav .box .box-son ul li a{
+    text-decoration: none;
+    color: #fff ;
+  }
+footer nav .box .box-son ul li a:hover{
+    text-shadow: 0 0 5px;
+  }
+footer nav .box .box-son .lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer nav .box .box-son h2 .logo{
+    color: #fff;
+}
+footer nav .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 30px;
+    background:#004e64;
+} 
+    }
+
+
+    /*---------------------- configuração para desktop------------------------------- */
+@media (min-width:1281px) and (max-width:5066px){
+
+  
+    /*------ inicio header -------*/
+    header{
+        background-color: #25A18E;
+        color: #000;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+        box-shadow: 0px 5px 40px -22px #000000;
+        -webkit-box-shadow: 0px 5px 40px -22px #000000;
+        -moz-box-shadow: 0px 5px 40px -22px #000000;
+    }
+    header img{
+        display: none;
+    }
+    header .areaHeader h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .areaHeader h1 #logo{
+        color:#fff;
+        margin-left: 20px;
+    }
+    header div .box .link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        color: #004E64;
+    }
+    header #idMenu{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header div .box{
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+    }
+    header div .box .link{
+        margin: 20px;
+        border-radius: 20px;
+        text-align: center;
+        height: 40px;
+        width: 150px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+    header div .box .link:hover{
+        background-color: #f3f3f3;
+        transition: 0.3s;
+    }
+    header div .forms{
+        margin: 20px 3% 0 0;
+        height: 40px;
+        width: 100px;
+        border-radius: 8px;
+        background-color:#00a5cf;
+        color: #fff;
+        font-family:  'Aleo', serif;
+        font-weight: 700;
+        font-size: 16px;  
+        box-shadow: 3px 3px 20px -10px #000000;
+        -webkit-box-shadow: 3px 3px 20px -10px #000000;
+        -moz-box-shadow: 3px 3px 20px -10px #000000; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header div .forms:hover{
+        background-color: #004E64;
+        color: #fff;
+        transition: 0.3s;
+    }
+    /* ---------------------------------- */
+            /* Alterando Main */
+    /* ---------------------------------- */
+    
+   
+    
+    /*------------- Primeira Parte da Home ----------------*/
+    main{
+        display: flex;
+        justify-content: center;
+        /* flex-grow: 1; */
+        /* border: solid 8px #25A18E; */
+        min-height: 1100px;
+
+    }
+    main #corpo{
+        /* margin-top: 70px; */
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* align-items: center; */
+        align-content: center;
+        width: 100%;
+        margin-top: 3%;
+    
+    }
+    main #corpo .part1main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 60px;
+        background:linear-gradient(45deg, #004E64, #00a5cf);
+        height: 600px;
+       
+    }
+    main #corpo .textimage1{
+        text-align: center;
+        font-size: 35px;
+        max-width: 500px;
+        padding-right: 70px;
+        padding-top: 50px;
+        color: #25A18E;
+        margin-top: 15%;
+    }
+    main #corpo .textimage1 .helphealth2{
+        font-size: 39px;
+        color: #fff;
+    
+    }
+    main #corpo .textimage1 .helphealth1{
+        color:#00a5cf;
+    
+    }
+    /* main #image1{ 
+        margin-right:5%;
+        margin-top: 7%;
+        height:350px;
+        width:550px;
+        background-color: #004E64;
+        border:solid 5px #004E64;    
+        box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        background: url(/public/img/imag1.png) no-repeat;
+     }*/ 
+    main #image2{
+        margin-right:5%;
+        margin-top: 7%;
+        height:350px;
+        width:550px;
+        background-color: #25A18E;
+        border:solid 5px #25A18E;  
+        border-radius: 9px;  
+        box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.52);
+        background: url(/public/img/imag1.png) no-repeat;
+    }
+    
+    /* aumento de area clicavel  */
+    main .conheçaHH a:link, main .conheçaHH a {
+        background-color: #00a5cf;
+        color: white;
+        /* border: 2px solid #9fffcb; */
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+        -webkit-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52);
+        -moz-box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.52); 
+        border-radius: 10px;
+        margin-top: 35px;
+        margin-right: 70px;
+    }
+    main .conheçaHH a:hover, a:active {
+        background-color: #004e64;
+        color: white;
+        transition: 350ms;
+      }
+    
+      /* '---------' */
+    
+    .agrupador-coluna{
+        display: flex;
+        flex-direction: column;
+    }
+    .gap{
+        align-items: center;
+        gap: 20px;
+    }
+    /*-------------Fim da Primeira Parte da Home ----------------*/
+
+     /*-------------Segunda Parte da Home ----------------*/
+    
+     main #perrengues .perrenguesPrincipalText{
+        align-items: center;
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 29px;
+        max-width: 1100px;
+    }
+    main #perrengues .perrenguesPrincipalText .helphealth{
+        color:#25A18E;
+        height: 39px;
+        border-radius: 6px;
+    
+    }
+    
+    main #perrengues{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        padding-top:35px;
+       
+    }
+    main #perrengues .lado{
+        width: 1100px;
+        height: 230px;
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+        border-radius: 14px;
+        box-shadow: 3px 3px 20px -10px #000000;
+        -webkit-box-shadow: 3px 3px 20px -10px #000000;
+        -moz-box-shadow: 3px 3px 20px -10px #000000; 
+        background-color: #e7e7e7;
+        align-items: center;
+    }
+    main .perrenguesText{
+        padding-left: 28px;
+        font-size: 20px;
+        max-width: 800px;
+      
+    }
+    main #perrengues .problemas{
+        background:linear-gradient(#25A18E, #004E64);
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 22px;
+       
+    }
+    main #perrengues .filaimg{
+        
+        width: 280px;
+        height:250px;
+        background: url(/public/img/fila.png);
+        border-radius: 13px;
+     
+    }
+    main #perrengues .remedio{
+        width: 160px;
+        margin-top: 7%;
+        background-color:#fbff00;
+    }
+    main #perrengues .remedioimg{
+        width: 280px;
+        height:250px;
+        background: url(/public/img/remedio.png);
+        border-radius: 13px;
+      
+    }
+    main #perrengues .exp {
+        width: 210px;
+        margin-top: 7%;
+        background-color:#fbff00;
+    }
+    main #perrengues .expimg{
+        width: 280px;
+        height:250px;
+        background: url(/public/img/exp.png);
+        border-radius: 13px;
+       
+        
+        
+    }
+    main #perrengues .corletraproblemas{
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        padding-left: 70px;
+     
+    }
+    /*-------------Fim da Segunda Parte da Home ----------------*/
+    
+      /* Trabalhando na Pagina de formulario dia 30/08/22 - Pedro */
+body #corpoBeta{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+body #corpoBeta .FormBeta{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #004E64, #00A5CF);
+    width: 35%;
+    height: 350px;
+    justify-content: space-evenly;  
+    border-radius: 20px;
+    box-shadow: 2px -2px 6px #333, 2px 2px 6px #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+ /*Trabalhando na Pagina de formulario dia 30/08/22 - Pedro */
+    
+  /* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
+
+body #corpoBeta .FormBeta input[type=text], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+
+body #corpoBeta .FormBeta input[type=submit]{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background: #25A18E;
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.144), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #333;
+}
+body #corpoBeta .FormBeta input[type=submit]:hover{
+    transition: 450ms;
+}
+body #corpoBeta .FormBeta label{
+    color: #fff;
+    /* text-shadow: 2px 2px 2px #333;   */
+}
+body #corpoBeta .FormBeta label .concordotermos {
+    text-decoration: none;
+    color:#004E64;
+    text-shadow: none;
+}
+
+body #corpoBeta .FormBeta input[type=checkbox]{
+    box-shadow: 1px 2px 3px #333;
+    cursor: pointer;
+}
+body #corpoBeta .FormBeta .agrupador-coluna{
+    gap: 5px;
+}
+body #corpoBeta #betaText{
+    display: flex;
+    width: 30%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 6px #333;
+}
+/* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
+    
+
+/*  --------------------------------------------------------- LOGIN e CADASTRO-----------------------------------------------------------*/
+.fundologin{
+    display: flex;
+    justify-content: center;
+    background: url(/public/img/fundotalvez.png) no-repeat no-repeat;
+    width: 3000px;
+
+    
+}
+.mainlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items:center
+    
+    /* background:linear-gradient(45deg, #004E64, #00a5cf);
+    width: 1000px; */
+}
+.formlogin{
+    display: flex;
+    background-color: #25A18E;
+    height: 440px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 26%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+.formlogin a{
+ color: #fff;
+ font-size: 20px;
+}
+.formlogin .palavralogin{
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.formlogin .botaologar{
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formlogin .botaologar:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formlogin .linkslogin{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 35px; 
+}
+.formlogin .primeiroacesso{
+    font-size: 20px;
+}
+body .formlogin input[type=password], input[type=email]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+     /* ------------ PARTE CADASTRO ----------------*/
+.formcadastro{
+    display: flex;
+    background-color: #25A18E;
+    height: 490px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 26%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+}
+
+body .formcadastro input[type=password], input[type=email], input[type="text"]{
+    box-shadow: 2px 2px 4px #333;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px 12px 12px 12px;
+
+}
+.formcadastro .palavralogin{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.formcadastro .botaocadastro{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formcadastro .botaocadastro:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.formcadastro .checkboxtermo{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.formcadastro .primeiroacesso{
+    font-size: 20px;
+}
+.formcadastro a{
+    color: #fff;
+    font-size: 20px;
+   }
+/* ---------------------------------------------BOTAO CADASTROREMEDIO ---------------------------*/
+.formcadastro .botaocadastroremedio{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    background-color:#00a5cf;
+    color: #fff;
+    font-family:  'Aleo', serif;
+    font-weight: 700;
+    font-size: 16px;  
+    box-shadow: 3px 3px 20px -10px #000000;
+    -webkit-box-shadow: 3px 3px 20px -10px #000000;
+    -moz-box-shadow: 3px 3px 20px -10px #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formcadastro .botaocadastroremedio:hover{
+    background-color: #004E64;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* --------------------------------------------- FIM BOTAO CADASTROREMEDIO ---------------------------*/
+
+/*  --------------------------------------------------------- FIM LOGIN e CADASTRO-----------------------------------------------------------*/
+
+
+  /*Configurando o Conteúdo Help Health*/
+.poderdoF-pai{
+    margin-top: 40px;
+    /* border: red 1px solid;  */
+    width: 1200px;
+    height: 1800px;
+    border-radius: 10px;
+    background-color: rgb(207, 204, 204);
+    padding: 20px;
+    justify-content: center;
+    color: black;
+}
+.poderdoF{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: #012c26;
+   
+}
+.caixa-remedio , .caixa-espera , .caixa-experiencia {
+    font-size: 20px;
+    background-image: url("/public/img/back-farmacia2.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    /* border: red 1px solid;  */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 5px 40px 40px 18px ;
+    width: 350px;
+    height: 300px;
+}
+.caixa-espera {
+    background-image: url("/public/img/back-consulta.jpg");
+}
+.caixa-experiencia{
+    background-image: url("/public/img/back-experiencia.jpg");
+}
+.texto-caixa {
+    margin-top: 250px;
+    /* border: red 1px solid;  */
+    width: 500px;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+    color: white;
+    font-size: 22px;
+}
+.texto-caixa-explicacao{
+    font-size: 27px;   
+    color: black;
+    height: 100px;
+    /* border: red 1px solid;  */
+}
+.traco{
+    /* margin: 50px 50px 0px 40px; */
+    border: #105a4f  1px solid;  
+    margin-bottom: 60px;
+    width: 80%;
+    margin: 50px 10%;
+}
+
+main .conteudos .poderdoF-pai  .poderdoF .caixas-conteudos{
+    display: flex;
+    flex-direction: row;
+    }
+
+.caixa-remedio-explicacao , .caixa-espera-explicacao , .caixa-experiencia-explicacao{
+    font-size: 20px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    /* border: red 1px solid;   */
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+    margin: 5px 40px 40px 40px ;
+    width: 400px;
+    height: 100px;
+}
+.titulo-video{
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-bottom: -10px;
+    width: 1100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 33px;
+    background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+}
+.iframe-video{
+    margin: px 50px 0px 40px;
+    /* border: red 1px solid;   */
+    box-shadow: 5px 5px 15px rgb(88, 86, 86);
+    background: linear-gradient(45deg, #105a4f, #00a5cf) ;
+    border-radius: 10px;
+
+}  
+
+/* ----Fim do Conteudo Help Health----- */
+    
+    /* inicio politica privacidade*/
+    #politicaeprivacidade{
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        text-align: center;
+        align-items: center;
+        margin-top: 120px;
+        padding-top: 35px;
+        max-width: 1300px;
+        border-radius: 13px;
+        justify-content: center;
+    }
+    #politicaeprivacidade h3 {
+       padding:20px;
+    }
+   #politicaeprivacidade h4{
+       padding:20px
+   }
+   li{
+       text-decoration: none;
+   }
+    
+    /*fim politica e privacidade */
+
+
+    /*----inicio Termosdeuso-----*/
+    .termosdeuso{
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .termosdeuso h2{
+        padding-bottom: 15px;
+    }
+    .termosdeuso h3{
+        padding: 15px;
+    }
+
+
+ /* ---------------------------------- */
+        /* Alternado Link Dúvidas */
+/* ---------------------------------- */
+main .boxDuvidas{
+
+    margin: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+main .boxDuvidas .tituloDuvidas{
+    background: #004E64;
+    color: #fff;
+    text-align: center;
+    width: 1100px;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 40px 0;
+    margin: 20px 0;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+}
+main .boxDuvidas nav ul li{list-style-type: none}
+
+main .boxDuvidas nav ul li div{
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+main .boxDuvidas nav ul li .boxClick{
+    background: linear-gradient(90deg,#004E64 40%, #25A18E);
+    color: #fff;
+    cursor: pointer;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+}
+main .boxDuvidas nav ul li .boxClick:active{
+    background-color: #ddd;
+    /* transition: none; */
+}
+main .boxDuvidas nav ul .respostaDesativada .resposta{
+	/* -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;  */
+    display: none;
+}
+main .boxDuvidas nav ul .respostaAtivada .boxClick{
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+main .boxDuvidas nav ul .respostaAtivada .resposta{
+    display: block;
+    background-color: #e7e7e7;
+    margin-top: 0;
+    padding: 25px 100px 40px 100px;
+    font-size: 25px;
+    width: 900px;
+    border-radius: 0 0 10px 10px;
+	-webkit-animation: slide-in-top 0.5s;
+            animation: slide-in-top 0.5s;
+    z-index: 1;
+}
+main .boxDuvidas nav ul li div img{
+    height: 30px;
+    margin: 16px 20px 0 0;
+    position: absolute;
+    right: 0;
+    filter: invert(1);
+}
+main .boxDuvidas nav ul li div p{
+    padding: 10px 0px;
+}
+main .boxDuvidas nav ul .respostaAtivada div img{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+}
+main .boxDuvidas nav ul .respostaDesativada div img{
+    transition: 0.5s;
+}
+        /* Efeito da resposta descendo */
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* -------- fim Duvidas ------- */
+
+
+/*---------------------------------INICIO HELPHEALTH LOGADO -----------------------------------*/
+.fundologado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background:url(/public/img/fundo.jpg)
+}
+.mainlogado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    background:linear-gradient(45deg, #004E64, #00a5cf);
+    width: 1400px;
+    
+}
+.mainlogado .msghomelogin{
+    display: flex;
+    
+    color: #fff;
+}
+.mainlogado .areapesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.mainlogado .buscarhospital{
+    width: 800px;
+}
+.mainlogado .areabuscarhospital{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.mainlogado  .lupa{
+    
+    height: 40px;
+    cursor: pointer;
+    width: 50px;
+    transition: 450ms;
+}
+.mainlogado .lupa:hover{  
+
+border-radius: 5px;
+cursor: pointer;
+transition: 450ms;
+width: 70px;
+height: 60px;
+
+}
+.mainlogado .opcoeslogado{
+    margin-top: 5%;
+    display: flex;
+    gap:50px;
+}
+.mainlogado .opcoeslogado .remedios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 550px;
+    background-color: #25A18E;
+    height: 450px;
+    font-size: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 40px -22px #000000;
+    -webkit-box-shadow: 0px 5px 40px -22px #000000;
+    -moz-box-shadow: 0px 5px 40px -22px #000000;
+    gap:18px;
+}
+.mainlogado .remedios .remedioopcao{
+    width: 100px;
+    height: 80px;
+}
+.mainlogado .remedioopcao:hover{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 450ms;
+    width: 130px;
+    height: 90px;
+}
+.mainlogado .opcoeslogado .feedbacks{
+    display:flex;
+    width: 550px;
+    background-color: #00A5CF;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+   
+    border-radius: 15px;
+    box-shadow: 0px 5px 40px -22px #000000;
+    -webkit-box-shadow: 0px 5px 40px -22px #000000;
+    -moz-box-shadow: 0px 5px 40px -22px #000000;
+}
+.mainlogado .feedbacks .feedbackopcao{
+    width: 130px;
+    height: 100px;
+}
+.mainlogado .feedbackopcao:hover{  
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 450ms;
+    width:150px;
+    height: 130px;
+    
+    }
+.mainlogado .opcoeslogado .feedbacks:hover{
+    background-color: #004E64;
+    transition: 450ms;
+    cursor: pointer;
+}
+.mainlogado .opcoeslogado .remedios:hover{
+    background-color: #105a4f;
+    transition: 450ms;
+    cursor: pointer;
+}
+/*---------------------------------FIM  HELPHEALTH LOGADO -----------------------------------*/
+/* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tabela .cabecalhoTabela{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.tabela .cabecalhoTabela div{
+    width: 100px;
+}
+.tabela .corpoTabela .displayRemedio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.tabela .corpoTabela p{
+    width: 100px;
+}
+
+/*--------------------------------- FIM CONSULTA REMEDIO ---------------------------------*/
+  /* ---------------------------------- */
+        /* Alternado Footer */
+/* ---------------------------------- */
+
+
+footer nav .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(280deg, #25A18E ,  #004e64);
+    min-height: 150px;
+}
+footer nav .box .box-son{
+    width: 34%;
+    /* background-color: #841bda52; */
+    /* border:3px solid #fcfcfc3d; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav .box .box-son ul li{
+
+    list-style-type: none;
+  }
+footer nav .box .box-son ul li a{
+    text-decoration: none;
+    color: #fff ;
+  }
+footer nav .box .box-son ul li a:hover{
+    text-shadow: 0 0 5px;
+  }
+footer nav .box .box-son .lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer nav .box .box-son h2 .logo{
+    color: #fff;
+}
+footer nav .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 30px;
+    background:#004e64;
+}
+footer nav .box .box-son .redesSociais{
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+footer nav .box .box-son .redesSociais .whats{
+    background: url(/public/img/whats.png);
+    width: 53px;
+    height:55px;
+    
+}
+footer nav .box .box-son .redesSociais .insta{
+    background: url(/public/img/insta.png);
+    width: 53px;
+    height:55px;
+    
+}
+footer nav .box .box-son .redesSociais .yt{
+
+    background: url(/public/img/yt.png);
+    width: 56px;
+    height:68px;
+    
+}
+}
+
+/*!-----------!!!!!!!!!!!!!!!!!-----------!*/
+/*!           Sempre Por ultimo           !*/
+/*!-----------!!!!!!!!!!!!!!!!!-----------!*/

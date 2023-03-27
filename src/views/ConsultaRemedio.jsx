@@ -18,13 +18,13 @@ function ConsultaRemedio(){
         getProdutos();
     },[])
     return(
-        <div>
+        <div className="areaPesquisaRemedio">
             <h1>Consulta Remedios</h1>
             <div className="tabela">
                 <div className="cabecalhoTabela">
-                    <div>ID</div>
-                    <div>Nome</div>
-                    <div>Bula</div>
+                    <div className="idRemedio">ID</div>
+                    <div className="nomeRemedio">Nome</div>
+                    <div className="bulaRemedio">Bula</div>
                 </div>
                 <div className="corpoTabela">
                     
@@ -35,7 +35,11 @@ function ConsultaRemedio(){
                                 <p className="bulaRemedio">{produto.Bula}</p>
                             </div>
                         ))}
-                    
+                            <div className="displayRemedio">
+                                <p className="idRemedio">000001</p>
+                                <p className="nomeRemedio">Paracetamól</p>
+                                <p className="bulaRemedio">Esse medicamento é contra indicado em caso de suspeita de denge</p>
+                            </div>
                 </div>
             </div>
         </div>

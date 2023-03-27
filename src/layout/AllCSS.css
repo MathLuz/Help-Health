@@ -11,8 +11,6 @@ body{
     flex-direction: column;
 }
 
-
-
   /* configuração para smartphone */
 @media(min-width: 50px) and (max-width:450px){
 
@@ -101,7 +99,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 1100px;
+            /* min-height: 11 00px; */
             gap:60px;
             margin-top: 12%;
             /* margin-bottom: 12%; */
@@ -603,7 +601,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
         /* Alternado Link Dúvidas */
 /* ---------------------------------- */
 main .boxDuvidas{
-    margin: 50px 0;
+    margin: 150px 0;
     font-family: 'Nunito', sans-serif;
 }
 main .boxDuvidas .tituloDuvidas{
@@ -709,6 +707,60 @@ main .boxDuvidas nav ul .respostaDesativada div img{
   }
   /* -------- fim Duvidas ------- */   
 
+  /* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/
+main .areaPesquisaRemedio{
+    color: #fff;
+    font-size: 11px;
+    padding: 20px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    background-color: #004E64;
+    border-radius: 10px;
+}
+main .areaPesquisaRemedio h1{
+    margin: 0 0 20px 0;
+}
+main .areaPesquisaRemedio .tabela{
+    width: 100%;
+}
+.tabela .cabecalhoTabela{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+.tabela .cabecalhoTabela div{
+    /* width: 100px; */
+    padding: 5px;
+}
+.tabela div p{
+    padding: 5px;
+}
+.tabela .corpoTabela div{
+    border-bottom: 1px solid #000;
+}
+.tabela .corpoTabela .displayRemedio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.idRemedio{
+    width: 10%;
+}
+.nomeRemedio{
+    width: 40%;
+}
+.bulaRemedio{
+    width: 50%;
+}
+
+/*--------------------------------- FIM CONSULTA REMEDIO ---------------------------------*/
 
         /* Pedroca mexendo na beta responsivo */
         footer{
@@ -871,7 +923,7 @@ main .boxDuvidas nav ul .respostaDesativada div img{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 1100px;
+        min-height: 500px;
         /* margin-bottom: 67px;tamanho do header */
         padding-top: 70px;
     }
@@ -1440,18 +1492,17 @@ border-radius: 10px;
     }
 
 
- /* ---------------------------------- */
+/* ---------------------------------- */
         /* Alternado Link Dúvidas */
 /* ---------------------------------- */
 main .boxDuvidas{
-    /* margin: 50px 0; */
+    margin: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
     width: 100%;
-    height: 300px;
 }
 main .boxDuvidas .tituloDuvidas{
     background: #004E64;
@@ -1461,11 +1512,10 @@ main .boxDuvidas .tituloDuvidas{
     justify-content: center;
     align-items: center;
     width: 65%;
-    height: 30%;
+    height: 80px;
     border-radius: 10px;
     font-size: 20px;
-    /* padding: 15px 0; */
-    /* margin: 10px 0; */
+    padding: 15px 0;
     box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
     -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
     box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
@@ -1476,14 +1526,14 @@ main .boxDuvidas nav{
     justify-content: center;
     align-items: center;
     width: 100%;
+    /* height: 300px; */
 }
 main .boxDuvidas nav ul{
     width: 100%;
-
 }
 main .boxDuvidas nav ul li{
     list-style-type: none;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1508,7 +1558,7 @@ main .boxDuvidas nav ul li .boxClick{
     box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
     -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
     box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
-    width: 60%;
+    width: 65%;
 }
 main .boxDuvidas nav ul li .boxClick:active{
     background-color: #ddd;
@@ -1527,9 +1577,9 @@ main .boxDuvidas nav ul .respostaAtivada .resposta{
     display: block;
     background-color: #e7e7e7;
     margin-top: 0;
-    /* padding: 10px 20px 15px 20px; */
+    padding: 10px 5% 15px 5%;
     font-size: 12px;
-    width: 60%;
+    width: 55%;
     border-radius: 0 0 10px 10px;
 	-webkit-animation: slide-in-top 0.5s;
             animation: slide-in-top 0.5s;
@@ -1749,7 +1799,7 @@ footer nav .box .box-son .redesSociais .yt{
     main{
         display: flex;
         justify-content: center;
-        min-height: 1100px;
+        /* min-height: 1100px; */
         /* margin-bottom: 67px;tamanho do header */
         padding-top: 70px;
     }
@@ -2007,8 +2057,6 @@ body #corpoBeta #betaText{
     box-shadow: 2px 2px 6px #333;
 }
 /* Trabalhando na Pagina de formulario dia 31/08/22 - Pedro */
-    
-/* o help health notebook vai aqui */
 
 
 /*  --------------------------------------------------------- LOGIN e CADASTRO-----------------------------------------------------------*/
@@ -2155,7 +2203,142 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     font-size: 20px;
    }
 /*  --------------------------------------------------------- FIM LOGIN e CADASTRO-----------------------------------------------------------*/
+/* ---------------------------------- */
+        /* Alternado Link Dúvidas */
+/* ---------------------------------- */
+main .boxDuvidas{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+}
+main .boxDuvidas .tituloDuvidas{
+    background: #004E64;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 15px 0;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+}
+main .boxDuvidas nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 300px; */
+}
+main .boxDuvidas nav ul{
+    width: 100%;
+}
+main .boxDuvidas nav ul li{
+    list-style-type: none;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+main .boxDuvidas nav ul li div{
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+main .boxDuvidas nav ul li .boxClick{
+    background: linear-gradient(90deg,#004E64 45%, #25A18E);
+    color: #fff;
+    cursor: pointer;
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50); 
+    box-shadow:2px 2px 10px -2px rgba(0,0,0,0.50);
+    width: 65%;
+}
+main .boxDuvidas nav ul li .boxClick:active{
+    background-color: #ddd;
+    /* transition: none; */
+}
+main .boxDuvidas nav ul .respostaDesativada .resposta{
+	/* -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;  */
+    display: none;
+}
+main .boxDuvidas nav ul .respostaAtivada .boxClick{
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+main .boxDuvidas nav ul .respostaAtivada .resposta{
+    display: block;
+    background-color: #e7e7e7;
+    margin-top: 0;
+    padding: 10px 5% 15px 5%;
+    font-size: 17px;
+    width: 55%;
+    border-radius: 0 0 10px 10px;
+	-webkit-animation: slide-in-top 0.5s;
+            animation: slide-in-top 0.5s;
+    z-index: 1;
+}
+main .boxDuvidas nav ul li div img{
+    height: 18px;
+    margin: 11px 14px 0 0;
+    position: absolute;
+    right: 0;
+    filter: invert(1);
+}
+main .boxDuvidas nav ul li div p{
+    padding: 10px 0px;
+}
+main .boxDuvidas nav ul .respostaAtivada div img{
+    transition: 0.5s;
+    transform: rotateZ(180deg);
+}
+main .boxDuvidas nav ul .respostaDesativada div img{
+    transition: 0.5s;
+}
+        /* Efeito da resposta descendo */
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* -------- fim Duvidas ------- */
 
 
 /* o help health notebook vai aqui */
@@ -2308,7 +2491,7 @@ footer nav .copyright{
         justify-content: center;
         /* flex-grow: 1; */
         /* border: solid 8px #25A18E; */
-        min-height: 1100px;
+        /* min-height: 1100px; */
 
     }
     main #corpo{
@@ -2909,12 +3092,11 @@ main .conteudos .poderdoF-pai  .poderdoF .caixas-conteudos{
     }
 
 
- /* ---------------------------------- */
+/* ---------------------------------- */
         /* Alternado Link Dúvidas */
 /* ---------------------------------- */
 main .boxDuvidas{
-
-    margin: 50px;
+    margin: 150px ;
     font-family: 'Nunito', sans-serif;
 }
 main .boxDuvidas .tituloDuvidas{
@@ -2978,6 +3160,7 @@ main .boxDuvidas nav ul .respostaAtivada .resposta{
 }
 main .boxDuvidas nav ul li div img{
     height: 30px;
+    width: 30px;
     margin: 16px 20px 0 0;
     position: absolute;
     right: 0;
@@ -3029,6 +3212,7 @@ main .boxDuvidas nav ul .respostaDesativada div img{
     background:url(/public/img/fundo.jpg)
 }
 .mainlogado{
+    height: 1100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3131,7 +3315,7 @@ height: 60px;
     border-radius: 5px;
     cursor: pointer;
     transition: 450ms;
-    width:150px;
+    width: 150px;
     height: 130px;
     
     }
@@ -3147,35 +3331,64 @@ height: 60px;
 }
 /*---------------------------------FIM  HELPHEALTH LOGADO -----------------------------------*/
 /* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/
-main div{
+main .areaPesquisaRemedio{
+    color: #fff;
+    font-size: 20px;
+    padding: 40px;
+    margin: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 1000px;
+    background-color: #004E64;
+    border-radius: 10px;
+}
+main .areaPesquisaRemedio h1{
+    margin: 0 0 20px 0;
+}
+main .areaPesquisaRemedio .tabela{
+    width: 100%;
 }
 .tabela .cabecalhoTabela{
+    font-size: 23px;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    border-bottom: 1px solid #000;
+    width: 100%;
 }
 .tabela .cabecalhoTabela div{
-    width: 100px;
+    /* width: 100px; */
+    padding: 5px;
+}
+.tabela div p{
+    padding: 5px;
+}
+.tabela .corpoTabela div{
+    border-bottom: 1px solid #000;
 }
 .tabela .corpoTabela .displayRemedio{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-.tabela .corpoTabela p{
-    width: 100px;
+.idRemedio{
+    width: 10%;
+}
+.nomeRemedio{
+    width: 40%;
+}
+.bulaRemedio{
+    width: 50%;
 }
 
 /*--------------------------------- FIM CONSULTA REMEDIO ---------------------------------*/
-  /* ---------------------------------- */
+
+
+/* ---------------------------------- */
         /* Alternado Footer */
 /* ---------------------------------- */
-
-
 footer nav .box{
     display: flex;
     flex-direction: row;
@@ -3193,7 +3406,6 @@ footer nav .box .box-son{
 }
 
 footer nav .box .box-son ul li{
-
     list-style-type: none;
   }
 footer nav .box .box-son ul li a{

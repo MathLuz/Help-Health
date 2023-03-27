@@ -7,7 +7,7 @@
 git clone "https://github.com/MathLuz/Help-Health.git"
 ```
 
-### Para puxar e `atualizar sua pasta` pelo que está no Github, faça isso sempre antes de atualizar o projeto
+### Para puxar e `atualizar sua pasta` pelo que está no Github, faça isso sempre antes de editar o projeto
 ```shell
 git pull
 ```

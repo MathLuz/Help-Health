@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Help-Health/static/css/main.92b3e3d1.css",
-    "main.js": "/Help-Health/static/js/main.8f0f479a.js",
+    "main.css": "/Help-Health/static/css/main.c0d9ed53.css",
+    "main.js": "/Help-Health/static/js/main.e81fad1d.js",
     "static/media/fundotalvez.png": "/Help-Health/static/media/fundotalvez.ddb49fb1753d958734d1.png",
     "static/media/back-consulta.jpg": "/Help-Health/static/media/back-consulta.fcc682e0a9b964b5f010.jpg",
     "static/media/back-experiencia.jpg": "/Help-Health/static/media/back-experiencia.a69957fac8ef0924adc2.jpg",
@@ -14,11 +14,11 @@
     "static/media/fila.png": "/Help-Health/static/media/fila.074bd525ca5945c4fe89.png",
     "static/media/exp.png": "/Help-Health/static/media/exp.0672e7e3cc0a497638d8.png",
     "index.html": "/Help-Health/index.html",
-    "main.92b3e3d1.css.map": "/Help-Health/static/css/main.92b3e3d1.css.map",
-    "main.8f0f479a.js.map": "/Help-Health/static/js/main.8f0f479a.js.map"
+    "main.c0d9ed53.css.map": "/Help-Health/static/css/main.c0d9ed53.css.map",
+    "main.e81fad1d.js.map": "/Help-Health/static/js/main.e81fad1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.92b3e3d1.css",
-    "static/js/main.8f0f479a.js"
+    "static/css/main.c0d9ed53.css",
+    "static/js/main.e81fad1d.js"
   ]
 }

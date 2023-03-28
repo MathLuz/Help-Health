@@ -16,8 +16,6 @@ function CadastroRemedio() {
     })
 
 
-    
-
 
     const valorInput = e => setRemedio({ ...Remedio, [e.target.name]: e.target.value  });     //constante que pega oque vc digitou no input
 

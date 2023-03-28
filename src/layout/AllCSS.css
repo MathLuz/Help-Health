@@ -3209,17 +3209,21 @@ main .boxDuvidas nav ul .respostaDesativada div img{
     display: flex;
     justify-content: center;
     width: 100%;
-    background:url(/public/img/fundo.jpg)
+    height: 100%;
+    background:url(/public/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .mainlogado{
-    height: 1100px;
+    height: 1000px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:40px;
     background:linear-gradient(45deg, #004E64, #00a5cf);
     width: 1400px;
-    
 }
 .mainlogado .msghomelogin{
     display: flex;
@@ -3230,42 +3234,40 @@ main .boxDuvidas nav ul .respostaDesativada div img{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 .mainlogado .buscarhospital{
     width: 800px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 0 10px 10px 10px;
 }
 .mainlogado .areabuscarhospital{
     display: flex;
     align-items: center;
-    gap:10px;
-    font-size: 20px;
+    gap: 10px;
+    font-size: 25px;
     color: #fff;
 }
-
 .mainlogado  .lupa{
-    
-    height: 40px;
+    /* height: 40px; */
     cursor: pointer;
     width: 50px;
-    transition: 450ms;
 }
 .mainlogado .lupa:hover{  
-
-border-radius: 5px;
-cursor: pointer;
-transition: 450ms;
-width: 70px;
-height: 60px;
-
+    transform: rotateZ(360deg);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* width: 70px; */
+    /* height: 60px; */
 }
 .mainlogado .opcoeslogado{
     margin-top: 5%;
     display: flex;
     gap:50px;
 }
-.mainlogado .opcoeslogado .remedios{
+.mainlogado .opcoeslogado .divImg{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3280,54 +3282,43 @@ height: 60px;
     -moz-box-shadow: 0px 5px 40px -22px #000000;
     gap:18px;
 }
-.mainlogado .remedios .remedioopcao{
-    width: 100px;
-    height: 80px;
+.mainlogado .opcoeslogado .divImg img{
+    /* width: 100px; */
+    height: 100px;
+    filter: invert(1);
 }
-.mainlogado .remedioopcao:hover{
+/* .mainlogado .remedioopcao:hover{
     border-radius: 5px;
     cursor: pointer;
     transition: 450ms;
     width: 130px;
     height: 90px;
-}
+} */
 .mainlogado .opcoeslogado .feedbacks{
-    display:flex;
-    width: 550px;
     background-color: #00A5CF;
-    height: 450px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 25px;
-   
-    border-radius: 15px;
-    box-shadow: 0px 5px 40px -22px #000000;
-    -webkit-box-shadow: 0px 5px 40px -22px #000000;
-    -moz-box-shadow: 0px 5px 40px -22px #000000;
-}
-.mainlogado .feedbacks .feedbackopcao{
-    width: 130px;
-    height: 100px;
 }
 .mainlogado .feedbackopcao:hover{  
-
     border-radius: 5px;
     cursor: pointer;
     transition: 450ms;
-    width: 150px;
     height: 130px;
     
     }
-.mainlogado .opcoeslogado .feedbacks:hover{
-    background-color: #004E64;
+.mainlogado .opcoeslogado .divImg:hover{
     transition: 450ms;
     cursor: pointer;
+    transition: 0.4s;
+    font-size: 30px;
+}
+.mainlogado .opcoeslogado .divImg:hover img{
+    height: 120px;
+    transition: 0.4s;
 }
 .mainlogado .opcoeslogado .remedios:hover{
     background-color: #105a4f;
-    transition: 450ms;
-    cursor: pointer;
+}
+.mainlogado .opcoeslogado .feedbacks:hover{
+    background-color: #004E64;
 }
 /*---------------------------------FIM  HELPHEALTH LOGADO -----------------------------------*/
 /* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/

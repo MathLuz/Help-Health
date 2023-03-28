@@ -15,8 +15,8 @@ $dados   =  json_decode($resposta_json, true);
 
 if ($dados){                                                            
 
- 
-  $query_usuario = "INSERT INTO cadastro (Nome, Email, Senha) VALUES(:nome, :email, :senha)";        //inves de colocar dentro de value os valores colocamos links qque abaixo usando bind
+
+   $query_usuario = "INSERT INTO cadastro (Nome, Email, Senha) VALUES(:nome, :email, :senha)";        //inves de colocar dentro de value os valores colocamos links qque abaixo usando bind
    $cad_Usuario = $conexao->prepare($query_usuario);      //aqui conecta com o banco                                         //param pegamos eles e atribuimos os valores
 
    $cad_Usuario->bindParam(':nome',$dados['usuario']['nome'], PDO::PARAM_STR);                  //esse PDO PARAM_STR eh pra dizer que e uma string uma parada assim as vezes n precisa usar 

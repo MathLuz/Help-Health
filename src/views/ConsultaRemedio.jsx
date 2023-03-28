@@ -35,11 +35,6 @@ function ConsultaRemedio(){
                                 <p className="bulaRemedio">{produto.Bula}</p>
                             </div>
                         ))}
-                            <div className="displayRemedio">
-                                <p className="idRemedio">000001</p>
-                                <p className="nomeRemedio">Paracetamól</p>
-                                <p className="bulaRemedio">Esse medicamento é contra indicado em caso de suspeita de denge</p>
-                            </div>
                 </div>
             </div>
         </div>

@@ -28,24 +28,23 @@ function HomeLogado() {
     
     <div className="fundologado">
       <main className="mainlogado">
-          <h2 className="msghomelogin">Ola usuario! O que deseja ver hoje?</h2>
+          <h2 className="msghomelogin">Olá usuário! O que deseja ver hoje?</h2>
           <div className="areapesquisa">
-           <label className="areabuscarhospital">procurando uma unidade de saude?
+           <label className="areabuscarhospital">Procurando uma unidade de saude?
             <select type="text" className="buscarhospital" placeholder="digite aqui" id="btnCarregar">
-
             {Object.values(data).map(produto=> (
-
-                                <option className="idRemedio" key={produto.IdUnidade}>{produto.nome}</option>
-
+                            
+                                <option className="consultaHospital" key={produto.IdUnidade}>{produto.nome}</option>
+                                
                         ))}
             </select>
 
            </label>
           </div>
-            <div className="opcoeslogado">
-              <div className="remedios divImg"> <img src="../img/remedioopcao.png" className="remedioopcao"/>Remédios</div>
-              <div className="feedbacks divImg"><img src="../img/feedbackopcao.png" className="feedbackopcao"/> Feedbacks</div>
-            </div>
+          <div className="opcoeslogado">
+              <div className="remedios  divImg"> <img src="img/remedioopcao.png" className="remedioopcao"/>Remédios</div>
+              <div className="feedbacks divImg"><img src="img/feedbackopcao.png" className="feedbackopcao"/> Feedbacks</div>
+           </div>
           
       </main>
     </div>

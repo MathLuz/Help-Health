@@ -14,6 +14,41 @@ main{
     min-height: 700px;
     /* margin: 50px 0 10px 0; */
 }
+/*-------------------------------------------- MODAL ----------------------------------------*/
+.dentromodal{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    background-color:#00A5CF;
+    align-items: center;
+    align-content: center;
+    width: 350px;
+    height:350px;
+    gap:15px;
+    }
+    .botaomodal{
+        display: flex;
+        margin-top: 1%;
+        margin-left: 89%;
+        margin-bottom: 29%;
+        background-color:#7e0707;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        color:#fff;
+        font-size: 16px;
+        width:30px;
+        height:25px;
+        border:none;
+        border-radius: 3px;
+    cursor: pointer;
+    }
+    .botaomodal:hover{
+        background-color:#290404;
+        transition: 0.3s;
+    }
+    /*-------------------------------------------- FIM MODAL ----------------------------------------*/
   /* configuração para smartphone */
 @media(min-width: 50px) and (max-width:450px){
 

@@ -42,8 +42,8 @@ function HomeLogado() {
            </label>
           </div>
           <div className="opcoeslogado">
-              <div className="remedios  divImg"> <img src="img/remedioopcao.png" className="remedioopcao"/>Remédios</div>
-              <div className="feedbacks divImg"><img src="img/feedbackopcao.png" className="feedbackopcao"/> Feedbacks</div>
+              <div className="remedios  divImg"> <img src="./img/remedioopcao.png" className="remedioopcao"/>Remédios</div>
+              <div className="feedbacks divImg"><img src="./img/feedbackopcao.png" className="feedbackopcao"/> Feedbacks</div>
            </div>
           
       </main>

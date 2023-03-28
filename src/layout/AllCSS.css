@@ -10,7 +10,10 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+main{
+    min-height: 700px;
+    /* margin: 50px 0 10px 0; */
+}
   /* configuração para smartphone */
 @media(min-width: 50px) and (max-width:450px){
 
@@ -350,8 +353,10 @@ body{
 }
 .mainlogin{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    
+    align-content: center;
+    align-items:center;
     /* background:linear-gradient(45deg, #004E64, #00a5cf);
     width: 1000px; */
 }
@@ -426,7 +431,7 @@ body .formlogin input[type=password], input[type=email]{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 26%;
+    /* margin-top: 26%; */
     border-radius: 16px;
     box-shadow: 3px 3px 20px -10px #000000;
     -webkit-box-shadow: 3px 3px 20px -10px #000000;
@@ -437,6 +442,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     box-shadow: 2px 2px 4px #333;
     width: 250px;
     height: 30px;
+    margin: 15px;
     padding: 5px;
     border-radius: 2px 12px 12px 12px;
 
@@ -445,7 +451,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     margin-bottom: 20px;
     color: #fff;
 }
-.formcadastro .botaocadastro{
+.formcadastro .botaocadastroremedio{
     margin-top: 25px;
     margin-bottom: 20px;
     height: 50px;
@@ -464,7 +470,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     justify-content: center;
     align-items: center;
 }
-.formcadastro .botaocadastro:hover{
+.formcadastro .botaocadastroremedio:hover{
     background-color: #004E64;
     color: #fff;
     transition: 0.3s;
@@ -1193,8 +1199,10 @@ body #corpoBeta #betaText{
 }
 .mainlogin{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    
+    align-content: center;
+    align-items:center;
     /* background:linear-gradient(45deg, #004E64, #00a5cf);
     width: 1000px; */
 }
@@ -1280,6 +1288,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     box-shadow: 2px 2px 4px #333;
     width: 250px;
     height: 30px;
+    margin: 15px;
     padding: 5px;
     border-radius: 2px 12px 12px 12px;
 
@@ -1288,7 +1297,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     margin-bottom: 20px;
     color: #fff;
 }
-.formcadastro .botaocadastro{
+.formcadastro .botaocadastroremedio{
     margin-top: 25px;
     margin-bottom: 20px;
     height: 50px;
@@ -1307,7 +1316,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     justify-content: center;
     align-items: center;
 }
-.formcadastro .botaocadastro:hover{
+.formcadastro .botaocadastroremedio:hover{
     background-color: #004E64;
     color: #fff;
     transition: 0.3s;
@@ -1632,7 +1641,61 @@ main .boxDuvidas nav ul .respostaDesativada div img{
   /* ---------------------------------- */
         /* Alternado Footer */
 /* ---------------------------------- */
+/* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/
 
+main .areaPesquisaRemedio{
+    color: #fff;
+    font-size: 20px;
+    padding: 40px;
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #004E64;
+    border-radius: 10px;
+    width: 80%;
+}
+main .areaPesquisaRemedio h1{
+    margin: 0 0 20px 0;
+}
+main .areaPesquisaRemedio .tabela{
+    width: 100%;
+}
+.tabela .cabecalhoTabela{
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+.tabela .cabecalhoTabela div{
+    /* width: 100px; */
+    padding: 5px;
+}
+.tabela div p{
+    padding: 5px;
+}
+.tabela .corpoTabela div{
+    border-bottom: 1px solid #000;
+}
+.tabela .corpoTabela .displayRemedio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.idRemedio{
+    width: 10%;
+}
+.nomeRemedio{
+    width: 40%;
+}
+.bulaRemedio{
+    width: 50%;
+}
+
+/*--------------------------------- FIM CONSULTA REMEDIO ---------------------------------*/
 
 
 footer nav .box{
@@ -2070,8 +2133,10 @@ body #corpoBeta #betaText{
 }
 .mainlogin{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    
+    align-content: center;
+    align-items:center;
     /* background:linear-gradient(45deg, #004E64, #00a5cf);
     width: 1000px; */
 }
@@ -2083,7 +2148,7 @@ body #corpoBeta #betaText{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 76%;
+    /* margin-top: 76%; */
     border-radius: 16px;
     box-shadow: 3px 3px 20px -10px #000000;
     -webkit-box-shadow: 3px 3px 20px -10px #000000;
@@ -2146,7 +2211,7 @@ body .formlogin input[type=password], input[type=email]{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 76%;
+    /* margin-top: 76%; */
     border-radius: 16px;
     box-shadow: 3px 3px 20px -10px #000000;
     -webkit-box-shadow: 3px 3px 20px -10px #000000;
@@ -2157,6 +2222,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     box-shadow: 2px 2px 4px #333;
     width: 250px;
     height: 30px;
+    margin: 15px;
     padding: 5px;
     border-radius: 2px 12px 12px 12px;
 
@@ -2165,7 +2231,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     margin-bottom: 20px;
     color: #fff;
 }
-.formcadastro .botaocadastro{
+.formcadastro .botaocadastroremedio{
     margin-top: 25px;
     margin-bottom: 20px;
     height: 50px;
@@ -2184,7 +2250,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     justify-content: center;
     align-items: center;
 }
-.formcadastro .botaocadastro:hover{
+.formcadastro .botaocadastroremedio:hover{
     background-color: #004E64;
     color: #fff;
     transition: 0.3s;
@@ -2340,9 +2406,61 @@ main .boxDuvidas nav ul .respostaDesativada div img{
   }
   /* -------- fim Duvidas ------- */
 
+/* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/
 
-/* o help health notebook vai aqui */
+main .areaPesquisaRemedio{
+    color: #fff;
+    font-size: 20px;
+    padding: 40px;
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #004E64;
+    border-radius: 10px;
+    width: 1000px;
+}
+main .areaPesquisaRemedio h1{
+    margin: 0 0 20px 0;
+}
+main .areaPesquisaRemedio .tabela{
+    width: 100%;
+}
+.tabela .cabecalhoTabela{
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+.tabela .cabecalhoTabela div{
+    /* width: 100px; */
+    padding: 5px;
+}
+.tabela div p{
+    padding: 5px;
+}
+.tabela .corpoTabela div{
+    border-bottom: 1px solid #000;
+}
+.tabela .corpoTabela .displayRemedio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.idRemedio{
+    width: 10%;
+}
+.nomeRemedio{
+    width: 40%;
+}
+.bulaRemedio{
+    width: 50%;
+}
 
+/*--------------------------------- FIM CONSULTA REMEDIO ---------------------------------*/
 
 /* ---------------------------------- */
         /* Alternado Footer */
@@ -2783,8 +2901,7 @@ body #corpoBeta #betaText{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    align-items:center
-    
+    align-items:center;
     /* background:linear-gradient(45deg, #004E64, #00a5cf);
     width: 1000px; */
 }
@@ -2870,6 +2987,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     box-shadow: 2px 2px 4px #333;
     width: 250px;
     height: 30px;
+    margin: 15px;
     padding: 5px;
     border-radius: 2px 12px 12px 12px;
 
@@ -2878,7 +2996,7 @@ body .formcadastro input[type=password], input[type=email], input[type="text"]{
     margin-bottom: 20px;
     color: #fff;
 }
-.formcadastro .botaocadastro{
+.formcadastro .botaocadastroremedio{
     margin-top: 25px;
     margin-bottom: 20px;
     height: 50px;
@@ -3322,18 +3440,19 @@ main .boxDuvidas nav ul .respostaDesativada div img{
 }
 /*---------------------------------FIM  HELPHEALTH LOGADO -----------------------------------*/
 /* --------------------------------- INICIO CONSULTA REMÉDIO ---------------------------------*/
+
 main .areaPesquisaRemedio{
     color: #fff;
     font-size: 20px;
     padding: 40px;
-    margin: 150px;
+    margin: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1000px;
     background-color: #004E64;
     border-radius: 10px;
+    width: 1000px;
 }
 main .areaPesquisaRemedio h1{
     margin: 0 0 20px 0;

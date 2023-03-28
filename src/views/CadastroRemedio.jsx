@@ -54,18 +54,18 @@ function CadastroRemedio() {
     }
 
   return(
-<div className="fundologin">
+    <div className="fundologin">
         <main className="mainlogin">
             {status.type === 'erro' ? <AlertErro>{status.mensagem} </AlertErro>: ""}            {/*mensagem de sucesso ou erro  */}
             {status.type === 'success' ? <AlertSuccess>{status.mensagem} </AlertSuccess>: ""}
 
             <form className="formcadastro" onSubmit={CadRemedio} >  
                 <h2 className="palavralogin">Cadastre o remedio:</h2>
-                <label>Nome: </label><input name="nome" id="nome" type="text" onChange={valorInput} ></input> 
-                <label>Bula: </label><input name="bula" id="bula" type="text" onChange={valorInput} ></input>
-               <input type="submit" className="botaocadastroremedio" value="Cadastrar remedio"/>
-               
-                
+                <label>Nome: </label>
+                <input name="nome" id="nome" type="text" onChange={valorInput} ></input> 
+                <label>Bula: </label>
+                <input name="bula" id="bula" type="text" onChange={valorInput} ></input>
+                <input type="submit" className="botaocadastroremedio" value="Cadastrar remedio"/>
             </form>
         </main>
     </div>
